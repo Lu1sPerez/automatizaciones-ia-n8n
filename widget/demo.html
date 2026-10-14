@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Demo del widget de stock</title>
+<style>
+  body { margin: 0; font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; background: #f4f6f8; color: #141a21; }
+  main { max-width: 680px; margin: 0 auto; padding: 48px 20px; }
+  h1 { font-size: 28px; line-height: 1.2; margin: 0 0 8px; }
+  p { color: #48525e; }
+  code { background: #e7ebef; padding: 2px 6px; border-radius: 4px; font-size: 14px; }
+  .aviso { border-left: 3px solid #2a78d6; padding: 8px 14px; background: #fff; border-radius: 0 8px 8px 0; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Gomería de ejemplo</h1>
+  <p>Esta página simula el sitio de un comercio que instaló el widget de chat. Tocá el botón azul abajo a la derecha y preguntá, por ejemplo, <code>¿tienen 205/55 R16?</code> o <code>aceite</code>.</p>
+  <p class="aviso">Modo demo: las respuestas salen de un catálogo de ejemplo dentro del propio widget. En producción, el mensaje va a un webhook de n8n que valida al comercio, busca en su base de Supabase y redacta la respuesta con un modelo de IA.</p>
+</main>
+<script src="chat-widget.js" data-endpoint="demo" data-clave="demo" data-titulo="Consultá stock y precios" data-color="#2a78d6" defer></script>
+</body>
+</html>
